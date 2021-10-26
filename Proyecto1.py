@@ -22,7 +22,17 @@ def recursion():
 
 def colecciones():
     print("Punto 1\n")
-    #resolucion
+    
+    print("map(): Recibe como parametro una funcion que es aplicada a los elementos de su segundo parametro, una coleccion.")
+    print("Ej: Convertir la primera letra en mayuscula de cada elemento perteneciente a una lista.\n")
+
+    print("filter(): Filtra los elementos de una coleccion. La funcion dada sirve como criterio para realizar esta operacion y devuelve un booleano. Los elementos que pasen este filtro seran agregados a una nueva coleccion.")
+    print("Ej: Dada una lista de numeros enteros, solo queremos obtener aquellos que sean negativos.\n")
+
+    print("reduce(): Permite reducir los elementos de una coleccion, devolviendo un solo valor. La funcion que le pasamos suele ser una funcion acumulativa y el retorno, su resultado. ")
+    print("Ej: Dada una lista que contenga todas las notas finales de los alumnos, obtener el promedio.")
+
+    #Faltan los diagramas
 
     print("Punto 2\n")
     #resolucion
