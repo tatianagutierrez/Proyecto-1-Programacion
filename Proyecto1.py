@@ -1,6 +1,6 @@
 def expreRegulares():
-    print("Punto 1\n")
-    #resolucion
+    print("Punto 1")
+    print("^(LV|LQ)-(\D{3}|\D{1,2}\d+) \n")
 
     print("Punto 2\n")
     #resolucion
