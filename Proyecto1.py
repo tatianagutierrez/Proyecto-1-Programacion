@@ -3,7 +3,9 @@ def expreRegulares():
     print("^(LV|LQ)-(\D{3}|\D{1,2}\d+) \n")
 
     print("Punto 2\n")
-    #resolucion
+    # resolver: no se imprime bien por tener caracteres especiales.
+    # nota: tal vez haya que considerar los casos de numeros negativos.
+    print("\b(1900|1[1-8]\d{2}|\d{1,3})\b")
 
 def recursion():
     print("Punto 1\n")
