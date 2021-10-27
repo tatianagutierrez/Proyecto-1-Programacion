@@ -56,7 +56,9 @@ while True:
         print("[", i, "]", menu[i])
 
     opcion = int(input("Que ejercicio desea ver?: "))
-    if opcion == 1:
+    if opcion == 0:
+        break
+    elif opcion == 1:
         expreRegulares()
     elif opcion == 2:
         recursion()
@@ -64,8 +66,6 @@ while True:
         colecciones()
     elif opcion == 4:
         intercambioDatos()
-    elif opcion == 0:
-        break
     else:
         print("Error. La opcion es incorrecta. Intentelo nuevamente\n")
 
