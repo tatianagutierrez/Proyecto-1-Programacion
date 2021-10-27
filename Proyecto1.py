@@ -32,7 +32,7 @@ def colecciones():
     print("reduce(): Permite reducir los elementos de una coleccion, devolviendo un solo valor. La funcion que le pasamos suele ser una funcion acumulativa y el retorno, su resultado. ")
     print("Ej: Dada una lista que contenga todas las notas finales de los alumnos, obtener el promedio.")
 
-    #Faltan los diagramas
+    print("Para ver un diagrama que explica de forma visual estas funciones, anda a 'diagramas_colecciones.pdf' en nuestro repositorio.")
 
     print("Punto 2\n")
     #resolucion
