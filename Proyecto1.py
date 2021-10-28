@@ -1,17 +1,16 @@
 import re
 
 def expreRegulares():
-    print("Punto 1")
+    print("\nPunto 1:")
     patronMatriculas = "^(LV|LQ)-(\D{3}|\D{1,2}\d+)"
-    print(patronMatriculas ,"\n")
+    print(patronMatriculas)
 
-    print("Punto 2\n")
-    # resolver: no se imprime bien por tener caracteres especiales.
-    # nota: tal vez haya que considerar los casos de numeros negativos.
-    print("\b(1900|1[1-8]\d{2}|\d{1,3})\b")
+    print("\nPunto 2:")
+    patronNumeros = "^(1900|1[0-8]\d{2}|\d{1,3})$"
+    print(patronNumeros)
 
-    print("Punto opcional\n")
-    listaMatriculas = ['LV-QWE','LV-344','LV-SX334','LA-123','LV','LV-S586']
+    print("\nPunto opcional:")
+    listaMatriculas = ["LV-QWE", "LV-344", "LV-SX334", "LA-123", "LV", "LV-S586"]
     patron = re.compile(patronMatriculas)
 
     matriculasValidas = [m for m in listaMatriculas if patron.match(m) != None]
