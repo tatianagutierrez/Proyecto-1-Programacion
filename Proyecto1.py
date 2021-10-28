@@ -1,11 +1,21 @@
+import re
+
 def expreRegulares():
     print("Punto 1")
-    print("^(LV|LQ)-(\D{3}|\D{1,2}\d+) \n")
+    patronMatriculas = "^(LV|LQ)-(\D{3}|\D{1,2}\d+)"
+    print(patronMatriculas ,"\n")
 
     print("Punto 2\n")
     # resolver: no se imprime bien por tener caracteres especiales.
     # nota: tal vez haya que considerar los casos de numeros negativos.
     print("\b(1900|1[1-8]\d{2}|\d{1,3})\b")
+
+    print("Punto opcional\n")
+    listaMatriculas = ['LV-QWE','LV-344','LV-SX334','LA-123','LV','LV-S586']
+    patron = re.compile(patronMatriculas)
+
+    matriculasValidas = [m for m in listaMatriculas if patron.match(m) != None]
+    print(matriculasValidas, "\n")
 
 def recursion():
     print("Punto 1\n")
