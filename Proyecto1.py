@@ -47,7 +47,7 @@ def recursion():
     #resolucion
 
 def colecciones():
-    print("Punto 1\n")
+    print("\nPunto 1")
     
     print("map(): Recibe como parametro una funcion que es aplicada a los elementos de su segundo parametro, una coleccion.")
     print("Ej: Convertir la primera letra en mayuscula de cada elemento perteneciente a una lista.\n")
@@ -60,8 +60,16 @@ def colecciones():
 
     print("Para ver un diagrama que explica de forma visual estas funciones, anda a 'diagramas_colecciones.pdf' en nuestro repositorio.")
 
-    print("Punto 2\n")
-    #resolucion
+    print("\nPunto 2")
+    def aproxPi(n):
+        if (n == -1):
+            return 0
+        else:
+            return (4*pow(-1, n)) / (2*n + 1) + aproxPi(n - 1)
+
+    print(aproxPi(3))
+    print(aproxPi(100))
+    print(aproxPi(7))
 
 def intercambioDatos():
     print("Punto 1\n")
