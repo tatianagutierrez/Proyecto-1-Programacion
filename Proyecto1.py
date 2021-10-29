@@ -9,6 +9,23 @@ def recursion():
     print("Punto 1\n")
     #resolucion
 
+    def parImpar(num):
+        if (len(num)) == 0:
+            return ""
+        else:
+            if (int(num[0]) % 2 == 0):
+                return "1" + parImpar(num[1:])
+            else:
+                return "2" + parImpar(num[1:])
+
+    L1 = "23456"
+    L2 = "10356"
+    L3 = "23005"
+
+    print(parImpar(L1))
+    print(parImpar(L2))
+    print(parImpar(L3))
+
     print("Punto 2\n")
     #resolucion
 
