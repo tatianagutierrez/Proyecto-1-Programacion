@@ -48,16 +48,27 @@ def recursion():
         else:
             return L[0] + devolverNuevaLista(L[1:])
 
-    L1 = [[15, 20, 25]]
-    L2 = [[1, 2, 3], [4, 5, 6], [7], [8]]
-    L3 = [[100, 200, 300], [400], [500, 600]]
-
-    print(devolverNuevaLista(L1))
-    print(devolverNuevaLista(L2))
-    print(devolverNuevaLista(L3))
+    print(devolverNuevaLista([[15, 20, 25]]))
+    print(devolverNuevaLista([[1, 2, 3], [4, 5, 6], [7], [8]]))
+    print(devolverNuevaLista([[100, 200, 300], [400], [500, 600]]))
 
     print("\nPunto 3:")
-    #resolucion
+
+    ''' CB: Si las listas no tienen la misma longitud devuelvo falso.
+        CR: Si tienen la misma longitud las comparo en el caso de que tengan un solo elemento, si no, comparo si los primeros elementos son iguales y sigo con el resto.'''
+        
+    def listasIguales(L1, L2):
+        if len(L1) != len(L2):
+            return False
+        else:
+            if len(L1) == 1 and len(L2) == 1:
+                return L1 == L2
+            else:
+                return L1[0] == L2[0] and listasIguales(L1[1:], L2[1:])
+    
+    print(listasIguales([10], [10]))
+    print(listasIguales([10, 2, 40], [10, 2, 40]))
+    print(listasIguales([50, 100, 200], [5, 10, 20]))
 
     print("\nPunto 4:")
     #resolucion
