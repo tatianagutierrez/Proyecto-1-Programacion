@@ -17,8 +17,7 @@ def expreRegulares():
     print(matriculasValidas, "\n")
 
 def recursion():
-    print("Punto 1\n")
-    #resolucion
+    print("\nPunto 1:")
 
     def parImpar(num):
         if (len(num)) == 0:
@@ -37,13 +36,30 @@ def recursion():
     print(parImpar(L2))
     print(parImpar(L3))
 
-    print("Punto 2\n")
+    print("\nPunto 2:")
+    
+    ''' Nota: Asumo que tiene al menos una lista. 
+        CB: Si L tiene una sola lista dentro, la devuelvo.
+        CR: Si tiene mas de una lista, devuelvo la primera lista y le agrego el resto. '''
+
+    def devolverNuevaLista(L):
+        if len(L) == 1:
+            return L[0]
+        else:
+            return L[0] + devolverNuevaLista(L[1:])
+
+    L1 = [[15, 20, 25]]
+    L2 = [[1, 2, 3], [4, 5, 6], [7], [8]]
+    L3 = [[100, 200, 300], [400], [500, 600]]
+
+    print(devolverNuevaLista(L1))
+    print(devolverNuevaLista(L2))
+    print(devolverNuevaLista(L3))
+
+    print("\nPunto 3:")
     #resolucion
 
-    print("Punto 3\n")
-    #resolucion
-
-    print("Punto 4\n")
+    print("\nPunto 4:")
     #resolucion
 
 def colecciones():
