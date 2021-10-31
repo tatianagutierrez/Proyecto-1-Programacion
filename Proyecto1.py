@@ -54,7 +54,8 @@ def recursion():
 
     print("\nPunto 3:")
 
-    ''' CB: Si las listas no tienen la misma longitud devuelvo falso.
+    ''' Notas: Asumo que las listas tienen al menos un elemento.
+        CB: Si las listas no tienen la misma longitud devuelvo falso.
         CR: Si tienen la misma longitud las comparo en el caso de que tengan un solo elemento, si no, comparo si los primeros elementos son iguales y sigo con el resto.'''
         
     def listasIguales(L1, L2):
@@ -71,7 +72,21 @@ def recursion():
     print(listasIguales([50, 100, 200], [5, 10, 20]))
 
     print("\nPunto 4:")
-    #resolucion
+
+    ''' Nota: Asumo que B no es cero.
+        CB: Si B no "entra" en A, entonces no son divisibles y devuelve 0.
+        CR: Si B "entra" en A, a A se le resta B y se suma la cantidad de veces que "entra", devolviendolo como resultado.
+    '''
+
+    def division(A, B):
+        if B > A:
+            return 0
+        else:
+            return division(A-B, B) + 1
+
+    print(division(20, 2))
+    print(division(60, 10))
+    print(division(4, 40))
 
 def colecciones():
     print("\nPunto 1")
@@ -105,18 +120,18 @@ def intercambioDatos():
     print("Punto 2\n")
     #resolucion
 
-print("MENU DEL PROGRAMA")
-print("---------------------------")
 menu = {1: "Expresiones regulares", 2: "Recursion", 3: "Colecciones", 4: "Formato de intercambios de datos", 0: "Salir"}
 
 # Este while pretende simular un switch case
 while True: 
     # Se imprime el menu
     opcionKey = menu.keys()
+    print("\nMENU DEL PROGRAMA")
+    print("---------------------------")
     for i in opcionKey:
         print("[", i, "]", menu[i])
 
-    opcion = int(input("Que ejercicio desea ver?: "))
+    opcion = int(input("\nQue ejercicio desea ver?: "))
     if opcion == 0:
         break
     elif opcion == 1:
