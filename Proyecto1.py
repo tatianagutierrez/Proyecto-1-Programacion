@@ -1,4 +1,6 @@
 import re
+import json
+
 
 def expreRegulares():
     print("\nPunto 1:")
@@ -10,11 +12,13 @@ def expreRegulares():
     print(patronNumeros)
 
     print("\nPunto opcional:")
-    listaMatriculas = ["LV-QWE", "LV-344", "LV-SX334", "LA-123", "LV", "LV-S586"]
+    listaMatriculas = ["LV-QWE", "LV-344",
+                       "LV-SX334", "LA-123", "LV", "LV-S586"]
     patron = re.compile(patronMatriculas)
 
     matriculasValidas = [m for m in listaMatriculas if patron.match(m) != None]
     print(matriculasValidas, "\n")
+
 
 def recursion():
     print("\nPunto 1:")
@@ -37,7 +41,7 @@ def recursion():
     print(parImpar(L3))
 
     print("\nPunto 2:")
-    
+
     ''' Nota: Asumo que tiene al menos una lista. 
         CB: Si L tiene una sola lista dentro, la devuelvo.
         CR: Si tiene mas de una lista, devuelvo la primera lista y le agrego el resto. '''
@@ -57,7 +61,7 @@ def recursion():
     ''' Notas: Asumo que las listas tienen al menos un elemento.
         CB: Si las listas no tienen la misma longitud devuelvo falso.
         CR: Si tienen la misma longitud las comparo en el caso de que tengan un solo elemento, si no, comparo si los primeros elementos son iguales y sigo con el resto.'''
-        
+
     def listasIguales(L1, L2):
         if len(L1) != len(L2):
             return False
@@ -66,7 +70,7 @@ def recursion():
                 return L1 == L2
             else:
                 return L1[0] == L2[0] and listasIguales(L1[1:], L2[1:])
-    
+
     print(listasIguales([10], [10]))
     print(listasIguales([10, 2, 40], [10, 2, 40]))
     print(listasIguales([50, 100, 200], [5, 10, 20]))
@@ -88,9 +92,10 @@ def recursion():
     print(division(60, 10))
     print(division(4, 40))
 
+
 def colecciones():
     print("\nPunto 1")
-    
+
     print("map(): Recibe como parametro una funcion que es aplicada a los elementos de su segundo parametro, una coleccion.")
     print("Ej: Convertir la primera letra en mayuscula de cada elemento perteneciente a una lista.\n")
 
@@ -103,6 +108,7 @@ def colecciones():
     print("Para ver un diagrama que explica de forma visual estas funciones, anda a 'diagramas_colecciones.pdf' en nuestro repositorio.")
 
     print("\nPunto 2")
+
     def aproxPi(n):
         if (n == -1):
             return 0
@@ -116,23 +122,23 @@ def colecciones():
 
 def intercambioDatos():
     print("Punto 1\n")
-    import json
+
     with open("data.json") as file:
         data = json.load(file)
-        for satelite in data:
-            print(satelite.get("estacion",""))
 
+    for estacion in data["estacion"]:
+        print("Cantidad de sensores de la estación", estacion['nombre'], ":", estacion['sensores']['cantidad'], "\n")
 
-    print("Estacion:"["estacion"])
-    #resolucion
 
     print("Punto 2\n")
-    #resolucion
+    # resolucion
 
-menu = {1: "Expresiones regulares", 2: "Recursion", 3: "Colecciones", 4: "Formato de intercambios de datos", 0: "Salir"}
+
+menu = {1: "Expresiones regulares", 2: "Recursion", 3: "Colecciones",
+        4: "Formato de intercambios de datos", 0: "Salir"}
 
 # Este while pretende simular un switch case
-while True: 
+while True:
     # Se imprime el menu
     opcionKey = menu.keys()
     print("\nMENU DEL PROGRAMA")
@@ -155,5 +161,3 @@ while True:
         print("Error. La opcion es incorrecta. Intentelo nuevamente\n")
 
 print("\nPrograma finalizado")
-
-    
