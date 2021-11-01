@@ -121,14 +121,15 @@ def colecciones():
 
 
 def intercambioDatos():
-    print("Punto 1\n")
+    print("\nPunto 1:")
 
     with open("data.json") as file:
         data = json.load(file)
 
     for estacion in data["estacion"]:
-        print("Cantidad de sensores de la estación", estacion['nombre'], ":", estacion['sensores']['cantidad'], "\n")
-
+        print("\nNombre:", estacion['nombre'])
+        for sensor in estacion['sensores']:
+            print(sensor,":",estacion['sensores'][sensor])
 
     print("Punto 2\n")
     # resolucion
