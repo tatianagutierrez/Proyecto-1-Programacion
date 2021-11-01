@@ -1,59 +1,59 @@
 {
-    "satelites":[
-        {
-        "estacion": "N1",
-        "latitud": "22°27'34.6S",
-        "longitud":"9°58'39.7W",
-        "bateria_mVxSeg":[1200, 1400, 1350, 1120, 1360, 1240,
-        1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
-        1324, 1422, 1321, 1221, 1147, 1201],
-        "sensores": {
-            "cantidad":"5",
-            "humedad":"90 %",
-            "temperatura":"10°C",
-            "direccion_viento":"",
-            "velocidad_viento":"30 km/h",
-            "presion_atmosf":"1013 hpa"}
-        },
-        {
-        "estacion": "N2",
-        "latitud": "44°35'07.7N",
-        "longitud":"11°29'35.4E",
-        "bateria_mVxSeg":[1200, 1400, 1350, 1120, 1360, 1240,
-        1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
-        1324, 1422, 1321, 1221, 1147, 1201],
-        "sensores": {
-            "cantidad":"4",
-            "humedad":"87 %",
-            "temperatura":"20°C",
-            "velocidad_viento":"17 km/h",
-            "presion_atmosf":"1025 hpa"}
-        },
-        {
-        "estacion": "N3",
-        "latitud": "51°48'22.5N",
-        "longitud":"136°44'47.8E",
-        "bateria_mVxSeg":[1200, 1400, 1350, 1120, 1360, 1240,
-        1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
-        1324, 1422, 1321, 1221, 1147, 1201],
-        "sensores": {
-            "cantidad":"2",
-            "temperatura":"17°C",
-            "presion_atmosf":"1011 hpa"}
-        },
-        {
-        "estacion": "N4",
-        "latitud": "66°11'25.5N",
-        "longitud":"120°30'09.2W",
-        "bateria_mVxSeg":[1200, 1400, 1350, 1120, 1360, 1240,
-        1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
-        1324, 1422, 1321, 1221, 1147, 1201],
-        "sensores": {
-            "cantidad":"3",
-            "humedad":"70 %",
-            "temperatura":"15°C",
-            "direccion_viento":"NE"}
-        }
-
-    ]
+    
+        "estacion": [
+            {
+                "nombre": "Sur10",
+                "latitud": "22°27'34.6S",
+                "longitud":"9°58'39.7W",
+                "bateria_mVxSeg":[1200, 1400, 1350, 1120, 1360, 1240,
+                1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
+                1324, 1422, 1321, 1221, 1147, 1201],
+                "sensores": {
+                    "cantidad":"5",
+                    "humedad":"90 %",
+                    "temperatura":"10°C",
+                    "direccion_viento":"",
+                    "velocidad_viento":"30 km/h",
+                    "presion_atmosf":"1013 hpa"}
+            },
+            {
+                "nombre": "Norte20",
+                "latitud": "44°35'07.7N",
+                "longitud":"11°29'35.4E",
+                "bateria_mVxSeg":[1200, 1400, 1350, 1120, 1360, 1240,
+                1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
+                1324, 1422, 1321, 1221, 1147, 1201],
+                "sensores": {
+                    "cantidad":"4",
+                    "humedad":"87 %",
+                    "temperatura":"20°C",
+                    "velocidad_viento":"17 km/h",
+                    "presion_atmosf":"1025 hpa"}
+            },
+            {
+                "nombre": "Este30",
+                "latitud": "51°48'22.5N",
+                "longitud":"136°44'47.8E",
+                "bateria_mVxSeg":[1200, 1400, 1350, 1120, 1360, 1240,
+                1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
+                1324, 1422, 1321, 1221, 1147, 1201],
+                "sensores": {
+                    "cantidad":"2",
+                    "temperatura":"17°C",
+                    "presion_atmosf":"1011 hpa"}
+            },
+            {
+                "nombre": "Sudeste40",
+                "latitud": "66°11'25.5N",
+                "longitud":"120°30'09.2W",
+                "bateria_mVxSeg":[1200, 1400, 1350, 1120, 1360, 1240,
+                1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
+                1324, 1422, 1321, 1221, 1147, 1201],
+                "sensores": {
+                "cantidad":"3",
+                "humedad":"70 %",
+                "temperatura":"15°C",
+                "direccion_viento":"NE"}
+            }  
+        ]      
 }
