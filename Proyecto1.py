@@ -113,12 +113,17 @@ def colecciones():
     print(aproxPi(100))
     print(aproxPi(7))
 
-import json
-with open('data.json') as file:
-    data = json.load(file)
-    
+
 def intercambioDatos():
     print("Punto 1\n")
+    import json
+    with open("data.json") as file:
+        data = json.load(file)
+        for satelite in data:
+            print(satelite.get("estacion",""))
+
+
+    print("Estacion:"["estacion"])
     #resolucion
 
     print("Punto 2\n")
