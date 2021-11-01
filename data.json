@@ -1,0 +1,46 @@
+{
+    "satelites":[
+        {
+        "estacion": "N1",
+        "latitud": "",
+        "longitud":"",
+        "bateria_mVxSeg":[1200, 1400, 1350, 1120, 1360, 1240,
+        1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
+        1324, 1422, 1321, 1221, 1147, 1201],
+        "sensores": {
+            "cantidad":"5",
+            "humedad":"",
+            "temperatura":"",
+            "direccion_viento":"",
+            "velocidad_viento":"",
+            "presion_atmosf":""}
+        },
+        {
+        "estacion": "N2",
+        "latitud": "",
+        "longitud":"",
+        "bateria_mVxSeg":[1200, 1400, 1350, 1120, 1360, 1240,
+        1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
+        1324, 1422, 1321, 1221, 1147, 1201],
+        "sensores": {
+            "cantidad":"4",
+            "humedad":"",
+            "temperatura":"",
+            "velocidad_viento":"",
+            "presion_atmosf":""}
+        },
+        {
+        "estacion": "N3",
+        "latitud": "",
+        "longitud":"",
+        "bateria_mVxSeg":[1200, 1400, 1350, 1120, 1360, 1240,
+        1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
+        1324, 1422, 1321, 1221, 1147, 1201],
+        "sensores": {
+            "cantidad":"2",
+            "temperatura":"",
+            "presion_atmosf":""}
+        }
+
+    ]
+}
