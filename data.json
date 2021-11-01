@@ -9,12 +9,12 @@
                 1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
                 1324, 1422, 1321, 1221, 1147, 1201],
                 "sensores": {
-                    "cantidad":"5",
-                    "humedad":"90 %",
-                    "temperatura":"10°C",
-                    "direccion_viento":"",
-                    "velocidad_viento":"30 km/h",
-                    "presion_atmosf":"1013 hpa"}
+                    "Cantidad":"5",
+                    "Humedad":"90 %",
+                    "Temperatura":"10°C",
+                    "Direccion del viento":"",
+                    "Velocidad del viento":"30 km/h",
+                    "Presion atmosferica":"1013 hpa"}
             },
             {
                 "nombre": "Norte20",
@@ -24,11 +24,11 @@
                 1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
                 1324, 1422, 1321, 1221, 1147, 1201],
                 "sensores": {
-                    "cantidad":"4",
-                    "humedad":"87 %",
-                    "temperatura":"20°C",
-                    "velocidad_viento":"17 km/h",
-                    "presion_atmosf":"1025 hpa"}
+                    "Cantidad":"4",
+                    "Humedad":"87 %",
+                    "Temperatura":"20°C",
+                    "Velocidad del viento":"17 km/h",
+                    "Presion atmosferica":"1025 hpa"}
             },
             {
                 "nombre": "Este30",
@@ -38,9 +38,9 @@
                 1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
                 1324, 1422, 1321, 1221, 1147, 1201],
                 "sensores": {
-                    "cantidad":"2",
-                    "temperatura":"17°C",
-                    "presion_atmosf":"1011 hpa"}
+                    "Cantidad":"2",
+                    "Temperatura":"17°C",
+                    "Presion atmosferica":"1011 hpa"}
             },
             {
                 "nombre": "Sudeste40",
@@ -50,10 +50,10 @@
                 1566, 1133, 1433, 1230, 1463, 1556, 1130, 1165,
                 1324, 1422, 1321, 1221, 1147, 1201],
                 "sensores": {
-                "cantidad":"3",
-                "humedad":"70 %",
-                "temperatura":"15°C",
-                "direccion_viento":"NE"}
+                "Cantidad":"3",
+                "Humedad":"70 %",
+                "Temperatura":"15°C",
+                "Direccion del viento":"NE"}
             }  
         ]      
 }
